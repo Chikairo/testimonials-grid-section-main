@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    /*primary colours*/
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+
+    /*secondarycolours*/
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 1rem;
+    height: calc(100vh - 1);
+    font-size: 13px;
+    font-family: 'Barlow Semi Condensed';
+}
+
+.box-1 {
+    background-color: var(--moderate-violet);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: none;
+    align-items: left;
+    border-radius: 0.5rem;
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+}
+
+.box-1 img {
+    position: absolute;
+    z-index: 0px;
+    right: 60px;
+    top: 40px;
+}
+
+.box-1 .author img {
+    position: inherit;
+}
+
+.box-1 .author p {
+    position: 0;
+    z-index: 1;
+}
+
+.box-1 header {
+    position: 0;
+    z-index: 1;
+}
+
+.box-2 {
+    background-color: var(--very-dark-grayish-blue);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    border-radius: 0.5rem;
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+}
+
+.box-3 {
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    border-radius: 0.5rem;
+    color: var(--very-dark-grayish-blue);
+    margin-bottom: 2rem;
+}
+
+.box-3 header {
+    color: var(--very-dark-grayish-blue);
+    font-weight: 600;
+}
+
+.box-3 b {
+    color: var(--very-dark-grayish-blue);
+}
+.box-4 {
+    background-color: var(--very-dark-blackish-blue);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    border-radius: 0.5rem;
+    color: var(--light-gray);
+    margin-bottom: 2rem;
+}
+
+.box-5 {
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    border-radius: 0.5rem;
+    color: var(--very-dark-grayish-blue);
+    margin-bottom: 2rem;
+}
+
+.box-5 header {
+    color: var(--very-dark-grayish-blue);
+    font-weight: 600;
+}
+
+.box-5 b {
+    color: var(--very-dark-grayish-blue);
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.author img {
+    border-radius: 2rem;
+    width: 2rem;
+}
+
+header {
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        font-size: 11px;
+        margin-top: 5rem;
+    }
+
+    @media (min-width: 500px) {
+        .field {
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 12rem;
+        }
+
+        .inner-field {
+            width: 500px;
+            display: grid;
+        }
+
+        .box-1, .box-4 {
+            display: grid;
+            align-items: center;
+            min-width: 450px;
+            max-height: 240px;
+            padding: 1.5rem;
+            padding-right: 1.25rem;
+        }
+
+        .box-2, .box-3 {
+            display: grid;
+            min-width: 200px;
+            max-height: 240px;
+            padding: 1.25rem;
+        }
+
+        .box-5 {
+            display: grid;
+            min-width: 200px;
+            padding: 1.5rem;
+            min-height: 465px;
+        }
+
+        header {
+            font-size: 16px;
+            margin-bottom: 0.8rem;
+        }
+
+        .author img {
+            width: 25px;
+        }
+
+        .author p {
+            font-size: 9px;
+        }
+
+        .author {
+            gap: 0.8rem;
+        }
+ 
+        .container-1 {
+            display: flex;
+            flex-direction: row;
+            gap: 1.25rem;
+        }
+    
+        .container-2 {
+            display: flex;
+            flex-direction: row;
+            gap: 1.25rem;
+        }
+        
+        .box-1 img {
+            max-width: 20.5%;
+            position: absolute;
+            z-index: 0px;
+            left: 20.5rem;
+            top: 6.5rem;
+        }
+    }
+
+}
